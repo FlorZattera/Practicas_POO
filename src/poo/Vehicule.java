@@ -9,7 +9,7 @@ public class Vehicule {
         return "Estoy avanzando";
     }
 
-    public String brake(){
+    public String brake() {
         return "Estoy frenando";
     }
 }

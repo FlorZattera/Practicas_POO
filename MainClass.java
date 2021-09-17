@@ -7,10 +7,10 @@ public class MainClass {
         Item tuna = new Item();
         tuna.name = "Atun Gomez";
         tuna.price = 180.0;
-        tuna.expirationDate = new Date(2021, 8, 12);
+        tuna.setExpirationDate(new Date(2021, 8, 12));
         tuna.calculateTax();
 
-    if (tuna.canItBeSold()){
+    if (tuna.canItBeSold()) {
         System.out.println("Nombre del item: " + tuna.name);
         System.out.println("Precio del item: " + tuna.price);
         System.out.println("Impuesto del item: " + tuna.tax);
@@ -18,6 +18,6 @@ public class MainClass {
     } else {
         System.out.println("Este item no está habilitado para la venta");
 
-    }
+       }
     }
 }
