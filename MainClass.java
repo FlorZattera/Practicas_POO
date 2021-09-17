@@ -10,7 +10,7 @@ public class MainClass {
         tuna.expirationDate = new Date(2021, 8, 12);
         tuna.calculateTax();
 
-    if (tuna.canItBeSold()) {
+    if (tuna.canItBeSold()){
         System.out.println("Nombre del item: " + tuna.name);
         System.out.println("Precio del item: " + tuna.price);
         System.out.println("Impuesto del item: " + tuna.tax);
