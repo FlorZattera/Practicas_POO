@@ -13,7 +13,7 @@ public class Person {
         return "Estoy hablando";
     }
 
-    public String play(){
+    public String play() {
         return "Estoy jugando";
     }
 }

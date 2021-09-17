@@ -1,15 +1,14 @@
 package src.poo;
 
-import java.util.Calendar;
 import java.util.Date;
 
 public class Item {
     public String name;
     public Double price;
     public Double tax;
-    public Date expirationDate;
+    private Date expirationDate;
 
-    public Double getTotalToPay(){
+    public Double getTotalToPay() {
         return price + tax;
     }
 
@@ -19,10 +18,14 @@ public class Item {
 
     public Boolean canItBeSold(){
         Date today = new Date();
-        if (expirationDate.after(today)){
-            return false;
-        } else {
-            return true;
-        }
+        return getExpirationDate().after(today);
+    }
+
+    public Date getExpirationDate() {
+        return expirationDate;
+    }
+
+    public void setExpirationDate(Date expirationDate) {
+        this.expirationDate = expirationDate;
     }
 }

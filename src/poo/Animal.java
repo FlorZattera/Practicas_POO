@@ -9,7 +9,7 @@ public class Animal {
         return true;
     }
 
-    public String sleep(){
+    public String sleep() {
         return "Estoy durmiendo";
 
     }
