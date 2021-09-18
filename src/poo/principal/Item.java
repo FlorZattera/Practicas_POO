@@ -1,4 +1,4 @@
-package src.poo;
+package src.poo.principal;
 
 import java.util.Date;
 
@@ -7,6 +7,10 @@ public class Item {
     public Double price;
     public Double tax;
     private Date expirationDate;
+
+    public Item (){
+
+    }
 
     public Double getTotalToPay() {
         return price + tax;

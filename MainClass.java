@@ -1,4 +1,4 @@
-import src.poo.Item;
+import src.poo.principal.Item;
 
 import java.util.Date;
 import java.util.Scanner;
